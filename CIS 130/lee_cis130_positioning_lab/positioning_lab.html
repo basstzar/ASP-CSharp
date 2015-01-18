@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Positioning assignment</title>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="styles.css" />
+  </head>
+<body>
+  <h4>Section 1</h4>
+  <div id="div1">DIV1</div>
+  <div id="div2">DIV2</div>
+  <div id="div3">DIV3</div>
+ 
+  <h4>Section 2</h4>
+  <div id="div4">DIV4</div>
+  <div id="div5">DIV5</div>
+  <div id="div6">DIV6</div>
+ 
+  <h4>Section 3</h4>
+  <p>This is just some text with a span element <span>SPAN 1</span> nested inside. Position this span relatively.</p>
+ 
+  <h4>Section 4</h4>
+  <div id="divA">DIV A</div>
+  <div id="divB">DIV B</div>
+  <div id="divC">DIV C</div>
+  <div id="divD">DIV D</div>
+ 
+  <h4>Section 5</h4>
+  <div id="divE">DIV E<div id="divF">DIV F</div></div>
+  <div id="divG">DIV G<div id="divH">DIV H</div></div>
+</body>
+</html>
+
+<!--
+1.	Why do the nested DIVs (DIV F and DIV H) look different? Why are they different widths and appear to be in different positions? What caused this behavior?
+
+*The widths are different because the absolute positioning on DIV H results in the borders collapsing on the "DIV H" text.  Absolute positioning removes the element from the normal flow resulting in changed position behavior.
+
+2.	What happens if 'DIV G' is just a container div without any content?  (To test, remove or comment out everything between the opening and closing <div> tags for 'DIV G' from the code and see. 
+    Refresh your web page. Be sure to replace it before you submit.) What do you see? What occurred and why?
+
+* DIV G collapsed.  This occurs because of absolute positioning.  
+
+3.	What did you expect the bottom margin to do? Did it apply as you expected? Why or why not? To test, comment out the CSS rules for margin and view. 
+
+* They would have no visible effect as they would create a margin below the divs.  Any block elements coming below them in normal flow would show the margin.  
+
+4.	What differences did you see when you viewed the page in Chrome, IE9, and Firefox? Be descriptive – remember, I can't see what you saw.
+
+* Firefox - Appears as shown in example. IE - Divs 2, 5, and 6 appeared to be positioned significantly lower than Firefox. Chrome Divs 2, 5, and 6 appeared to be positioned slightly lower than Firefox
+ 
+
+-->
