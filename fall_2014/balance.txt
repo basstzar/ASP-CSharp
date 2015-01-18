@@ -1,0 +1,70 @@
+Public Class frmBalance
+    Dim dblSummaryBalance As Double
+
+
+
+    Private Sub frmBalance_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+    'Declare module level variable for balance info
+    Private dblTotBalance
+    Private Sub btnCalc_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCalc.Click
+        Dim dblBalance As Double = Double.Parse(txtTransamnt.Text)
+        Dim dblLabel As Double
+        Dim dblCheck As Double
+
+
+        If radDeposit.Checked = True Then
+            dblLabel = txtTransamnt.Text
+            dblTotBalance = dblLabel
+            lblBalance.Text = dblLabel.ToString("c")
+            dblSummaryBalance = dblLabel
+            txtTransamnt.Focus()
+            txtTransamnt.Clear()
+        ElseIf radCheck.Checked And dblSummaryBalance >= dblBalance Then
+            dblLabel = dblTotBalance - txtTransamnt.Text
+            lblBalance.Text = dblLabel.ToString("c")
+            dblSummaryBalance = dblLabel
+            txtTransamnt.Focus()
+            txtTransamnt.Clear()
+
+        Else
+
+            dblCheck = dblSummaryBalance - 10
+            MessageBox.Show("Insufficient Balance - Deposit More Money! Service Fee Assessed")
+            lblBalance.Text = dblCheck.ToString("c")
+            dblSummaryBalance = dblCheck
+            txtTransamnt.Focus()
+            txtTransamnt.Clear()
+
+        End If
+
+
+
+
+
+
+    End Sub
+
+
+    Private Sub radSvc_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles radSvc.CheckedChanged
+        Dim dblCurrency As Double
+
+        If radSvc.Checked = True Then
+            dblCurrency = dblSummaryBalance - 10
+            lblBalance.Text = dblCurrency.ToString("c")
+            MessageBox.Show("Service Charge Assessed $10.00")
+        End If
+
+    End Sub
+
+
+    Private Sub BtnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnClose.Click
+        Me.Close()
+    End Sub
+
+    Private Sub BtnClear_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnClear.Click
+        txtTransamnt.Clear()
+        lblBalance.Text = "$0.00"
+    End Sub
+End Class

@@ -1,0 +1,73 @@
+/*CIS130 G. Lee Assignment: HTML and CSS Review*/
+
+header, nav, footer, main {
+display: block;
+}
+
+body {
+font-family: Verdana, Arial, sans-serif;
+font-size : 100% ;
+background-color: #eee;
+}
+
+header {
+background: #666 url("../img/header_image_2.jpg") no-repeat top right;
+}
+
+h1 {
+font-size: 150%; 
+border-bottom: 3px solid #333;
+padding: 7px; 
+}
+
+h2 {
+font-size: 125%; 
+border-bottom: 3px solid #333;
+padding: 7px;
+}
+
+h3 {
+font-size: 115%; 
+border-bottom: 3px solid #333;
+padding: 7px;
+color: #eee;
+background: #111;
+}
+
+p {
+text-align: justify;
+line-height: 150%;
+margin: 0 20px;
+}
+
+#intro {
+font-style: italic;
+}
+
+ul {
+list-style-type: none;
+}
+
+ul li {
+padding: 3px;
+}
+
+a.reference {
+text-decoration: none;
+}
+
+a:link {
+color: #000080;
+}
+
+a:visited {
+color: #800000;
+}
+
+a:hover {
+border: 1px dashed;
+}
+
+a:link {
+color: #000080;
+}
