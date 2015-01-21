@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Sample Form</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+  body {font: 1em Arial, sans-serif;}
+  fieldset {border: solid 2px #30a}
+  legend {color: #30a;font-weight:bold;}
+  input {background: #aac; padding: 3px;}
+</style>
+</head>
+
+<body>
+<form action="mailto:lkomarek@scc.spokane.edu" method="get" name="info_form" id="info_form" enctype="text/plain">
+	<fieldset><legend>Contact Information</legend>
+		<label for="name">Name:</label><br/><input name="name" id="name" type="text" size="30" /> (look at the code - bad value for name attribute)<br/>
+		Email:<br/><input name="email" type="text" size="30" /><br/>
+		Phone:<br/><input name="phone" type="text" size="30" />
+	</fieldset>
+	<p>Select the type of position you desire:
+	<select name="position">
+		<option>Part-time contract</option>
+		<option value="FT_contract">Full-time contract</option>
+		<option>Part-time permanent</option>
+		<option>Full-time permanent</option>
+	</select>
+	</p>
+	<p>Are you willing to relocate?<br/>
+		<label for="move_yes">Yes</label> 
+		<input name="relocate" id="move_yes" type="radio" value="yes" />
+		<label for="move_no">No</label> 
+		<input name="relocate" id="move_no" type="radio" value="no" checked="checked" />
+	</p>
+	<fieldset style="vertical-align: top;"><legend>Select those areas of expertise:</legend>
+	<div style="float:left;">
+	<table cellpadding="5"><tr><th valign="top">Web Development:</th><td valign="top">
+		
+		<input name="graphics" id="graphics" type="checkbox" value="yes" /> <label for="graphics">Web Graphics</label><br/>
+		<input name="design" type="checkbox" value="yes" /> Web Design<br/>
+		<input name="javascript" type="checkbox" value="yes" /> JavaScript<br/>
+		<input name="vbscript" type="checkbox" value="yes" /> VBScript<br/>
+		<input name="php" type="checkbox" value="yes" /> PHP<br/>
+		<input name="net" type="checkbox" value="yes" /> .NET
+	</td></tr></table></div>
+	<div style="float:left;"><table cellpadding="5"><tr><th valign="top">Database:</th><td valign="top">
+		<input name="mysql" type="checkbox" value="yes" /> mySQL<br/>
+		<input name="sql" type="checkbox" value="yes" /> SQL Server<br/>
+		<input name="access" type="checkbox" value="yes" /> Access
+	</td></tr></table></div>
+	<div style="float:left;"><table cellpadding="5"><tr><th valign="top">Software Development:</th><td valign="top">
+		<input name="java" type="checkbox" value="yes" /> Java<br/>
+		<input name="vbnet" type="checkbox" value="yes" /> VB.NET
+	</td></tr></table></div>
+	</fieldset>
+	<fieldset><legend>Submit your resume</legend>
+		<p>Use the browse button to find and attach your resume file:</p>
+		<p><input name="resume" type="file" /></p>
+	</fieldset>
+	<br/>
+	<input name="" type="reset" value="Clear the form" />
+	<input name="" type="submit" value="Send your info" />
+</form>
+</body>
+</html>
