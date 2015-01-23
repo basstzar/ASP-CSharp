@@ -10,29 +10,32 @@ form {
 	border-radius: 5px;
 }
 fieldset {
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 	border-radius: 5px;	
 	border: 1px solid #ccc;
 }
 legend{
-	color: #ccc;
+	color: aqua;
 	font-size: 120%;
 	border-radius: 5px;	
 }
 label {
 	float: left;
 	width: 8em;
-	padding-right; 15px;
 	color: #909090;
+}
+
+input {
+	text-align: right;
 }
 #personal_info_left_column {
 	float: left;
-	width: 390px;
-	margin: 0 auto;
+	width: 50%;
+
 }
 #personal_info_right_column {
 	float: left;
-	width: 390px;
-	margin: 0 auto;
+	width: 50%;
+
 }
