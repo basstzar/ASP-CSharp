@@ -4,33 +4,57 @@
 		<meta charset="UTF-8">
 		<title>CIS 130 Forms Assignment</title>
 		<link rel="stylesheet" href="form.css" />
+		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 	</head>
 	<body>
-		<form action="mailto:basstzar@gmail.com" method="post" name="forms_assignment" id="forms_assignment" enctype="text/plain">
+		<form action="mailtobasstzar@gmail.com" method="get" name="forms_assignment" id="forms_assignment" enctype="text/plain">
 			<fieldset><legend>Personal Info</legend>
 				<div id="personal_info_left_column">
-					<p><label for="first_name" >First Name:</label><input name="fname" id="fname" type="text" size="30" /></p>
-					<p><label for="last_name">Last Name:</label><input name="lname" id="lname" type="text" size="30" /></p>
-					<p><label for="address_1">Address1:</label><input name="address1" id="address1" type="text" size="30" /></p>
-					<p><label for="address_2">Address2:</label><input name="address2" id="address2" type="text" size="30" /></p>
-					<p><label for="city">City:</label><input name="city" id="city" type="text" size="30" /></p>
-					<p><label for="state">State:</label><input name="state" id="state" type="text" size="3" /></p>
+					<p><label for="fname" >First Name</label><input name="fname" id="fname" type="text" size="30" placeholder="Enter your first name" autofocus required /></p>
+					<p><label for="lname">Last Name</label><input name="lname" id="lname" type="text" size="30" placeholder="Enter your last name" required/></p>
+					<p><label for="address1">Address</label><input name="address1" id="address1" type="text" size="30" placeholder="Enter your street address" required/></p>
+					<p><label for="address2">Address2</label><input name="address2" id="address2" type="text" size="30" placeholder="Apartment, unit, etc. (if needed)" /></p>
+					<p><label for="city">City</label><input name="city" id="city" type="text" size="30" placeholder="Enter your city" required/></p>
+					<p><label for="state">State</label><select name="state" id="state" >
+						<option value="AZ">AZ</option> 
+						<option value="TX">TX</option>
+						<option value="WA">WA</option>
+						<option value="MA">MA</option>
+						<option value="CA">CA</option></select></p>
 				</div>
 				<div id="personal_info_right_column">
-					<p><label for="zip">Zip:</label><input name="zip" id="zip" type="text" size="10" /></p>
-					<p><label for="phone_number">Phone number:</label><input name="phone" id="phone" type="tel" size="10" /></p>
-					<p><label for="fax_number">Phone number:</label><input name="fax" id="fax" type="tel" size="10" /></p>
-					<p><label for="cell_number">Cell number:</label><input name="cell" id="cell" type="tel" size="10" /></p>
-					<p><label for="work_email">Work email:</label><input name="work_email" id="work_email" type="email" size="10" /></p>
-					<p><label for="home_email">Home email:</label><input name="home_email" id="home_email" type="email" size="10" /></p>
+					<p><label for="zip">Zipcode</label><input name="zip" id="zip" type="text" size="10" required  placeholder="5 digits" pattern="\d{5}" title="The zip code should consist of five numbers only"/></p>
+					<p><label for="phone_number">Phone number</label><input name="phone_number" id="phone_number" type="tel" size="12" maxlength="15"  placeholder="(xxx) xxx-xxxx" /></p>
+					<p><label for="fax_number">Fax number</label><input name="fax" id="fax_number" type="tel" size="12" maxlength="15"   placeholder="(xxx) xxx-xxxx"/></p>
+					<p><label for="cell_number">Cell number</label><input name="cell_number" id="cell_number" type="tel" size="12" maxlength="15"   placeholder="(xxx) xxx-xxxx"/></p>
+					<p><label for="work_email">Work email</label><input name="work_email" id="work_email" type="email" size="25" maxlength="50" placeholder="example@example.com" required /></p>
+					<p><label for="home_email">Home email</label><input name="home_email" id="home_email" type="email" placeholder="example@example.com" size="25" maxlength="50" /></p>
 				</div>
+				<p class="center"><input type="radio" name="sex" id="sex_male" value="male" checked="checked" /> <label for="sex_male" class="radio">Male</label>
+					 <input type="radio" name="sex" id="sex_female" value="female" /> <label for="sex_female" class="radio">Female</label></p>
+			</fieldset>		 
+			<fieldset><legend>Contact Method</legend>
+				<p class="center"><input type="radio" name="contact" id="phone" value="phone" checked="checked" /> <label for="phone" class="radio">Phone</label>
+					 <input type="radio" name="contact" id="email" value="email" /> <label for="email" class="radio">Email</label>
+					 <input type="radio" name="contact" id="fax" value="fax"/> <label for="fax" class="radio">Fax</label>
+					 <input type="radio" name="contact" id="cell" value="cell" /> <label for="cell" class="radio">Cell</label>
+					 <input type="radio" name="contact" id="pony" value="pony" /> <label for="pony" class="radio">Pony Express</label></p>
 			</fieldset>
-			<input name="" type="submit" value="Send your info" />
+			<fieldset><legend>What Would You like?</legend>
+				<p class="center"><input type="checkbox" name="newsletter" id="newsletter" value="yes" checked="checked" /> <label for="newsletter" class="radio">I wish  to receive the newsletter</label>
+				<input type="checkbox" name="announce" id="announce" value="yes"  /> <label for="announce" class="radio">I wish  to receive product announcements</label></p>
+				<p class="center"><input type="checkbox" name="money" id="money" value="yes"  /> <label for="money" class="radio">I wish  to receive free money</label></p>
+			</fieldset>
+			<fieldset><legend>Comments</legend>
+				<p class="center"><textarea rows="10" cols="60" name="comments" id="comments" placeholder="Enter your text here..." title="Enter comments here"></textarea></p>
+			</fieldset>
+			<fieldset><legend>Submit Your Information</legend>
+				<p class="center"><input name="submit" type="submit" value="Submit" />
+				<input name="reset" type="reset" value="Cancel" /></p>
+			</fieldset>
 				
 		</form>
-		
-	
-	
-	
-	
+			
 	</body>
+</html>
