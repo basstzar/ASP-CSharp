@@ -1,0 +1,11 @@
+count = 1
+row = 1
+
+while
+
+  while
+    print
+  end
+  puts
+  incre
+end
