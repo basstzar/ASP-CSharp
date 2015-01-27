@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Background</title>
+	<style type="text/css">
+		body {color: #ccc; background-color: black; opacity: 0.6; filter: alpha(opacity=60);}
+		.opacity30 {
+			filter:alpha(opacity=30);
+			-moz-opacity:0.3;
+			-khtml-opacity: 0.3;
+			opacity: 0.3;
+		}
+		.opacity60 {
+			filter:alpha(opacity=60);
+			-moz-opacity:0.6;
+			-khtml-opacity: 0.6;
+			opacity: 0.6;
+		}
+	</style>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+</head>
+<body>
+  <div id="div1"><img src="flowers.jpg" alt="flowers" class="opacity30" />Image at 30% opacity</div>
+  <div id="div2"><img src="flowers.jpg" alt="flowers" class="opacity60" />Image at 60% opacity</div>
+  <div id="div3"><img src="flowers.jpg" alt="flowers" />Image with no opacity set</div>
+</body>
+</html>

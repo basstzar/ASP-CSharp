@@ -1,0 +1,24 @@
+/*	Simplemenu	*/
+
+ol#simplemenu {
+	padding:0;
+	list-style:none;
+	margin: 1em;
+	width: 120px;
+}
+ol#simplemenu li {
+	border-bottom: dashed 1px #f93;
+	text-align: center;
+}
+ol#simplemenu li a {
+	background-color: #ffc;/* light yellow */
+	text-decoration: none;
+	color:#f70;
+	display: block;
+	width: 100%;
+	padding: 3px 0;
+}
+ol#simplemenu li a:hover {
+	background-color: #fda;	/* light orange */
+	color: #0000CC
+}

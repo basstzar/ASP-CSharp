@@ -1,0 +1,103 @@
+<!-- this page is for the left frame of the web page -->
+<html>
+<head><title></title>
+<style type="text/css">
+h3 {margin-bottom:2px;margin-top:2px;}
+hr {width:100%;color: #cccccc;height:1px;}
+</style>
+<!--2/27 test-->
+<script type="text/javascript">
+var num = 0;
+var bgc = new Array();
+var r=0,g=0,b=0,h="";
+
+function increaseVal() {
+    b+=51;
+    if (b>255) { 
+      b=0;
+      g+=51;
+      if (g>255) {
+        g=0;
+        r+=51;
+      }
+    }
+}
+
+//assign values to new array for bg table so it can be used for left frame
+for (var x=0;x<216;x++){
+
+  //assigns hex num to h
+  h = "#"+parent.RGBtoHex(r,g,b);
+  bgc[x]= h;
+
+  //increase rgb numbers
+  increaseVal();
+
+}
+
+//assign val to x to draw color table in left frame 2/27
+
+var str = "";
+str+="<table>";
+for (var y=0;y<bgc.length/12;y++){
+  str+="<tr>";
+
+  for (var z=0;z<12;z++) {
+    //str+="<td width='10' height='10' bgcolor='"+bgc[num]+"' onclick='parent.right.document.bgColor='"+bgc[num]+"';'>";
+    str+="<td width='10' height='10' bgcolor='"+bgc[num]+"'";
+    str+="onclick=\"parent.right.document.bgColor='"+bgc[num]+"';\"";
+    str+="title='"+bgc[num]+"'>";
+    str+="</td>";
+    num++;
+  }
+
+  str+="</tr>";
+}
+str+="</table>";
+
+</script>
+</head>
+<body onload="document.colorForm.color1.focus();">
+<div align="center">
+<h3 class="top">Single scheme</h3>
+<form name="colorForm" id="colorForm">
+    Color #1: <input type="text" name="color1" id="color1" size="5" /><br/>
+    Color #2: <input type="text" name="color2" id="color2" size="5" /><br/>
+    Color #3: <input type="text" name="color3" id="color3" size="5" /><br/><br/>
+    <input type="button" value="See Scheme" onclick="parent.showColors(color1.value,color2.value,color3.value);" />
+
+<!--<p style="width:100%;border-bottom:solid 1px #cccccc;"></p>-->
+<hr/>
+<h3>Schemes</h3>
+
+<select size="5" onchange="parent.showScheme(this.selectedIndex, this.options[this.selectedIndex].value);">
+  <option value="nostalgic">Nostalgic</option>
+  <option value="multicultural">Multicultural</option>
+  <option value="fresh">Fresh</option>
+  <option value="earthy">Earthy</option>
+  <option value="lively">Lively</option>
+  <option value="romantic">Romantic</option>
+  <option value="energetic">Energetic</option>
+  <option value="calming">Calming</option>
+  <option value="classic">Classic</option>
+  <option value="bold">Bold</option>
+  <option value="subdued">Subdued</option>
+  <option value="refreshing">Refreshing</option>
+  <option value="aggressive">Aggressive</option>
+  <option value="friendly">Friendly</option>
+  <option value="vibrant">Vibrant</option>
+  <option value="professional">Professional</option>
+  <option value="elegant">Elegant</option>
+  <option value="welcoming">Welcoming</option>
+</select>
+<!--<p style="width:100%;border-bottom:solid 1px #cccccc;"></p>-->
+<hr/>
+<h3>Background</h3>
+<script type="text/javascript">document.write(str);</script>
+<hr/>
+
+</div>
+</form>
+
+</body>
+</html>

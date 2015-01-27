@@ -1,0 +1,41 @@
+#navigation li {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+	background: url(rollover.gif) no-repeat left top;
+	border-bottom: 5px solid #777777;
+}
+#navigation a {
+	display: block;
+	padding: 7px 0px 0px 30px;
+	height: 23px;
+	width: 155px;
+	font: bold 13px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#navigation a:hover {
+	background: url(rollover.gif) 0px -40px;
+}
+#navigation a:active {
+	background: url(rollover.gif) 0px -80px;
+}
+#navigation a {
+	font: bold 13px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	padding: 7px 0px 0px 30px;
+	height: 30px;
+	width: 185px;
+	voice-family: "\"}\""; 
+	voice-family:inherit; 
+	height: 23px;
+	width: 155px;
+}
+#navigation a {
+	text-transform: uppercase;
+}

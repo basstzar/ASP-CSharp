@@ -1,0 +1,7 @@
+Advantage to positioning is that it isn't nearly as dependent on the placement of an element in the document. With floating, you can only float to the left or right, and the placement of the float might depend on what elements come before it. Positioned elements can be put anywhere in relation to their containing block.
+
+Floated elements permit the backgrounds and borders of other elements to slide beneath them but not the text content. Positioned elements let anything slide under them.  This makes it much easier for positioned elements to obscure text.
+
+Some properties (such as top and z-index) only apply to positioned elements. They should have no effect at all on floated elements.
+
+Whether floating or positioning a column, browser bugs make it almost a requirement that you place the column's div without any border, padding, margin, or background. Simply use the div as an invisible construct inside which you place elements that have whatever borders, margins, and so on that they need. There are always exceptions to this rule, but it's the best way to start.

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2 column - float layout</title>
+		<meta charset="utf-8" />
+		<style>
+			/* STEP #1 - SET BACKGROUND COLORS SO CONTAINER BLOCKS ARE EASILY VISIBLE*/
+			
+			/* STEP #2 - Remove default margin and padding. Center all body content */
+			body {margin:0; padding:0;
+				text-align: center;	/*centering hack for browsers v6 and earlier*/
+			}
+			
+			/* STEP #3 - Set width of content container to 90%.
+							set top/bottom margin of container to 10px;
+							set left/right margin to auto to center container in modern browsers
+							set text-align to left to fix the centering hack
+							set max width for wrapper
+			*/
+			#wrapper {
+				background: #ccc;
+				width: 90%;
+				margin: 10px auto;
+				text-align: left; 	/*centering hack fix for content*/
+				max-width: 1280px;
+				min-width: 960px;
+			}
+			
+			header{
+				background: #99ccff; 
+				padding: .5em;		/* add padding around header content */
+				
+			}
+			header h1 {
+				margin: 0;				/* remove default margin & padding from h1*/
+				padding: 0;
+			}
+			
+			/* STEP #4 - Float nav to left side */
+			nav{
+				background: #ff66cc;
+				float: left;
+				width: 160px;			/* set width so nav doesn't collapse to content */
+				margin:0;					/* remove default margin then set what we want for padding */
+				padding: 1em;
+			}
+			ul {
+				border: solid 1px black;
+			}
+			
+			/* STEP #5 - set left margin to move / clear the nav column */
+			main{
+				background: #ffff66;
+				margin-left: 200px;
+				margin-top:0;
+				padding: 1em;
+			}
+			
+			/* STEP #6 - Clear the floated nav bar (start after any floated elements. 
+							Add padding and remove margin. */
+			footer{
+				background: #66ff66;
+				clear: both;
+				padding: 0.5em;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header><h1>Header</h1></header>
+			<nav><h3>navigation</h3><ul><li>link 1</li><li>link 2</li></ul></nav>
+			<main><h2>main content</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+				<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorpe2 suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			</main>
+			<footer>footer</footer>
+		</div>
+	</body>
+</html>

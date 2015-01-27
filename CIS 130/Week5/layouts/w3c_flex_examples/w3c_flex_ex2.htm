@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Flex Example #2: http://dev.w3.org/csswg/css-flexbox-1/</title>
+		<style>
+			#item1 {background-color: #f3f;}	/* purple */
+			#item2 {background-color: #3f3;}	/* green */
+			span {background-color: #6fc;}	/* aqua */
+			#not-an-item {background-color: #ff0;}	/* yellow */
+		</style>
+	</head>
+	<body>
+		<div style="display:flex; border: solid 2px black;">
+			<!-- flex item: block child -->
+			<div id="item1">block child</div>
+
+			<!-- flex item: floated element; floating is ignored -->
+			<div id="item2" style="float: left;">float</div>
+
+			<!-- flex item: anonymous block box around inline content -->
+			anonymous item 3
+
+			<!-- flex item: inline child -->
+			<span>
+					item 4
+					<!-- flex items do not split around blocks -->
+					<div id="not-an-item">not a flex item - block item 4</div>
+					item 4
+			</span>
+		</div>
+	</body>
+</html>
