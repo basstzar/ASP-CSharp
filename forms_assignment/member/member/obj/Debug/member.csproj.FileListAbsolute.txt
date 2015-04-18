@@ -1,0 +1,9 @@
+W:\CIS258\member\member\bin\Debug\member.dll
+W:\CIS258\member\member\bin\Debug\member.pdb
+W:\CIS258\member\member\obj\Debug\member.csprojResolveAssemblyReference.cache
+W:\CIS258\member\member\obj\Debug\member.dll
+W:\CIS258\member\member\obj\Debug\member.pdb
+C:\Users\RANDOLPHL9417\Dropbox\CIS258-files\forms_assignment\member\member\bin\Debug\member.dll
+C:\Users\RANDOLPHL9417\Dropbox\CIS258-files\forms_assignment\member\member\bin\Debug\member.pdb
+C:\Users\RANDOLPHL9417\Dropbox\CIS258-files\forms_assignment\member\member\obj\Debug\member.dll
+C:\Users\RANDOLPHL9417\Dropbox\CIS258-files\forms_assignment\member\member\obj\Debug\member.pdb
