@@ -1,0 +1,68 @@
+/* based on CSS developed by Chris Coyier http://csstricks.com */
+
+.tabs {
+  width: 700px;
+  position: relative;
+  min-height: 400px;
+  clear: both;
+  margin: 25px 0;
+
+}
+.tab .content img {
+  margin: 7px;
+
+}
+img.stars {
+  max-width: 80px;
+}
+span.reviews {
+  font: 98%/2.0em Geargia, "Times New Roman", serif;
+  color: red;
+}
+.tab .content h3 {
+  color: #444;
+}
+.tab ul li {
+  list-style-type: none;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+}
+.tab [type=radio] {
+  display: none;
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+#add {
+  padding:3px 15px;
+  border:2px solid blue;
+  background-color:#1F058C;
+  color:#fff;
+}
+#add:hover{
+  background-color: blue ;
+}

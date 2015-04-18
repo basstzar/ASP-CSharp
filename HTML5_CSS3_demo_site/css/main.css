@@ -1,0 +1,564 @@
+body{
+  font: 98%/1.2em Helvetica, Arial, sans-serif;
+
+}
+#wrapper {
+  max-width: 1280px;
+  min-width: 1040px
+}
+/* link styling*/
+a:link {
+  text-decoration: none;
+  color: #1F058C;
+}
+a:hover {
+  color: #5C5C5C !important;
+  text-decoration: underline;
+}
+a:visited {
+  color: #716199 !important;
+ }
+
+/*header styles*/
+
+header #logo {
+  width: 400px;
+  float: left;
+}
+header #logo {
+  width: 700px;
+}
+header #logo img {
+  padding: 10px 20px
+}
+header #search {
+  float: right;
+  width: 400px;
+  margin: 20px 20px 0 0;
+}
+header #search br{
+  margin-bottom: 5px;
+}
+header #search #top_links {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+header #search form {
+  text-align: right;
+  margin-top: -13px
+}
+header form input#box{
+  background: url(../images/spyglass.jpg) no-repeat center right;
+  width: 167px;
+}
+header form input#box:focus {
+  background-image: none;
+}
+
+#search_button {
+  position:relative;
+  padding:3px 15px;
+  left:0;
+  background-color:#1F058C;
+  color:#fff;
+}
+#search_button:hover  {
+  background-color:blue;
+  color:#ccc;
+}
+/*social sprites*/
+#social{
+  float: right;
+  width:210px;
+  height:60px;
+  padding: 0px;
+  margin-right: 65px;
+}
+#social a.twitter {
+  display:block;
+  float:left;
+  height:60px;
+  width:50px;
+  margin:0px;
+  text-indent:-9999px;
+  background-image:url('../images/socials_sprite.png');
+  background-position: -8px 0;
+}
+#social a:hover.twitter {
+  background-image:url('../images/socials_sprite.png');
+  background-position: -249px 0;
+}
+#social a.youtube {
+  display:block;
+  float:left;
+  height:60px;
+  width:50px;
+  margin-left:2px;
+  text-indent:-9999px;
+  background-image:url('../images/socials_sprite.png');
+  background-position:-60px 0;
+}
+#social a:hover.youtube {
+  background-image:url('../images/socials_sprite.png');
+  background-position:-303px 0px;
+}
+#social a.facebook{
+  display:block;
+  float:left;
+  height:60px;
+  width:50px;
+  margin-left:2px;
+  text-indent:-9999px;
+  background-image:url('../images/socials_sprite.png');
+  background-position:-114px 0;
+}
+#social a:hover.facebook {
+  background-image:url('../images/socials_sprite.png');
+  background-position:-359px 0px;
+}
+#social a.linkedIn{
+  display:block;
+  float:left;
+  height:60px;
+  width:50px;
+  margin-left:2px;
+  text-indent:-9999px;
+  background-image:url('../images/socials_sprite.png');
+  background-position:-167px 0;
+}
+#social a:hover.linkedIn {
+  background-image:url('../images/socials_sprite.png');
+  background-position:-415px 0px;
+}
+/*end sprite*/
+main{}
+h1 {
+  clear: both;
+  margin: 20px 0;
+  text-align: center;
+  color: #748C00;
+  font-size: 170%;
+  text-shadow: 1px 1px 2px #ccc;
+}
+h1 a {
+  color: #748C00 !important;
+  margin-left: 20px;
+  float: none;
+}
+h1 a:hover {
+  text-decoration: underline;
+}
+img {
+  border: none;
+}
+hr {
+  height: 10px;
+  background: #1F058C;
+}
+footer {
+  overflow: hidden;
+  clear: both;
+}
+footer ul li {
+  list-style-type: none;
+  padding: 1px;
+  width: 150px;
+}
+footer ul li:hover {background: #fff;}
+footer div{
+  width: 28%;
+  float: left;
+  background: url(../images/footer_div_seperator.jpg) no-repeat 22em 1.5em;
+
+}
+footer #bottom_nav  {
+  margin-left: 14%;
+}
+footer #return {
+  background: none;
+}
+footer #copyright {
+  background: none;
+  font: 83% Georgia, "Times New Roman", serif;
+  color: #5C5C5C;
+  float: left;
+  clear: both;
+  margin-left: 35%;
+  width: 400px;
+}
+footer #copyright a{
+  color: #5C5C5C;
+}
+footer #copyright a:hover {
+  text-decoration: underline;
+  color: #444 !important;
+}
+
+/*begin about page styles***********************************************************/
+
+#about main {
+  padding: 0 40px;
+  line-height: 1.4em;
+}
+.breadcrumbs {
+  font-size: 90% !important;
+  margin: 3px 0 !important;
+}
+.breadcrumbs a {
+  margin: 3px 0 !important;
+  color: #1F058C !important;
+}
+.breadcrumbs a:hover{
+  text-decoration: none !important;
+  color: #5C5C5C !important;
+}
+#about main h2 {
+  color: #708A05;
+  clear: both;
+  text-shadow: 2px 2px #999;
+}
+#about main img {
+  float:left;
+  width: 273px;
+  margin-left: 5px;
+}
+#about main #top-text{
+  float: left;
+  width: 72%;
+  padding: 0 8px;
+  margin: 0 0 16px 10px;
+  background: rgba(31,5,140, 0.1);
+  font-size: 105%
+}
+#about main #lower-text {
+  padding: 0 8px;
+  float: left;
+  clear: both;
+  width: 96.5%;
+  clear: both;
+  margin-top: -12px;
+  background: rgba(31,5,140, 0.1);
+}
+/*resource page**************************************************/
+
+#resource_page main{
+  padding: 0 40px;
+}
+#resource_page main h1 {
+  float: left;
+  width: 200px;
+}
+#resource_page main ul li  {
+  clear: left;
+  padding: 5px;
+}
+#resource_page main ul li:hover {
+  background: transparent;
+}
+/*products page**************************************************/
+
+#products main{
+  overflow: hidden;
+  color: #444;
+  padding: 0 40px;
+}
+#products main img{
+  float: left;
+  width: 170px;
+  margin-right: 7px;
+}
+#products main a{
+  color: #1F058C;
+}
+#products main a:hover{
+  text-decoration: underline;
+}
+#products main ul li{
+  padding: 5px;
+}
+#products main h3{
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 1px #000;
+}
+#pet, #bath, #home{
+  margin: 30px 0 30px 0;
+  width: 28%;
+  float: left;
+  min-height: 430px;
+  padding: 20px;
+}
+#pet {
+  background: rgba(31,5,140, 0.3);
+}
+#bath{
+  background: rgba(31,5,140, 0.2);
+  margin-left: 10px;
+}
+#home{
+  background: rgba(31,5,140, 0.1);
+  margin-left: 10px;
+}
+
+/*FAQ page**********************************************/
+
+#faq main {
+  padding-left: 40px;
+  color: #444;
+}
+#faq dl {
+  line-height: 2.0em;
+}
+#faq dt {
+  font-weight: bold;
+  font-size: 110%
+}
+#faq dd{
+  color: #1F058C;
+}
+
+/*contact page***************************************/
+#contact .breadcrumbs{
+  padding-left: 40px;
+}
+#contact main h2 {
+  padding-left: 40px;
+  color: #1F058C;
+  margin: 20px 0 0 0;
+
+}
+#contact main form {
+  background: #fff;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#contact main fieldset {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #ccc;
+  background: rgba(31,5,140, 0.2);
+}
+#contact main legend{
+  color: #1F058C;
+  font-size: 120%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#contact main label {
+  float: left;
+  width: 8em;
+  color: #606060;
+  display: block;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#contact main input {	color: #909090;}
+#contact main input:focus, textarea:focus  {background: #ffc;}
+
+#contact main label.radio {
+  float: none;
+  display: inline;
+  width: 100%;
+  text-align: center;
+}
+#contact main p.center{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+#contact main #personal_info_left_column {
+  float: left;
+  width: 50%;
+}
+#contact main #personal_info_right_column {
+  float: left;
+  width: 50%;
+}
+#contact main input[type=submit], input[type=reset]{
+  width: 100px;
+  color: #fff !important;
+  background: #1F058C;
+  padding: 2px 6px;
+  margin: 6px 0;
+}
+/*shopping cart/table styles*************************************/
+#cart main {
+  padding-left: 40px;
+}
+#cart h2, h4 {
+  color: #1F058C;
+  text-align: center;
+  text-shadow: 1px .5px #eee;
+}
+table, td, th { border: 1px solid gray }
+table {
+  margin-top: 40px;
+  background: rgba(31,5,140, 0.2);
+  border-collapse:collapse;
+  border:1px dashed #1F058C;
+  color:#444;
+  width: 500px;
+  margin: 0 auto;
+}
+table td {
+  padding: 5px;
+}
+
+table tr:hover {
+  background: #ccc;
+  color: #fff;
+  text-shadow: 1px 1px #444
+}
+table tr.bold {
+  font-weight: bold;
+  font-size: 106%;
+  color: #fff;
+  text-shadow: 1px 1px #444
+}
+table td.center {
+  text-align: center;
+}
+#buy_button {
+  padding:5px 20px;
+  left:0;
+  background-color:#1F058C;
+  color:#fff;
+  margin: 20px auto;
+  width: 160px;
+  display: block;
+}
+#buy_button:hover  {
+  background-color:blue;
+  color:#ccc;
+}
+/*login page styles********************************************/
+#login_page main {
+  padding-left: 40px;
+}
+#login_page main form {
+  margin: 20px auto;
+  width: 40%;
+}
+#login_page label {
+  float: left;
+  width: 100px;
+}
+#login_page legend {
+  font-size: 120%;
+  font-weight: bold;
+  color: #1F058C;
+}
+#login_page fieldset {
+  background: rgba(31,5,140, 0.1);
+}
+.login_button {
+  padding:5px 15px;
+  left:0;
+  background-color:#1F058C;
+  color:#fff !important;
+  margin: 20px auto;
+  width: 130px;
+  display: block;
+}
+.login_button:hover  {
+  background-color:blue;
+  color:#ccc;
+}
+#register {
+  margin: 0 auto;
+  width: 350px
+}
+#register a:hover {
+  color: #444 !important;
+  text-decoration: underline;
+}
+/*Admin & Customer Service Pages************************************/
+#admin main, #service main{
+  padding-left: 40px;
+}
+#service main ul li{
+  padding: 6px;
+}
+#service main ul li a{
+  color: #1F058C ;
+}
+#service h2{
+  color: #708A05;
+  text-shadow: 1px 1px #ccc;
+  font-size: 170%;
+}
+#admin h3, #service h3 {
+  font-size: 150%;
+  color: #1F058C;
+}
+#admin #edit_page, #service #edit_page {
+  color: #fff;
+  margin-left: 30px;
+  background: #1F058C;
+  padding: 2px 6px;
+}
+#admin #comments, #service #comments {
+  width: 90%;
+}
+#admin main fieldset, #service main fieldset {
+  width: 40%;
+  margin: 20px auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #ccc;
+  background: rgba(31,5,140, 0.2);
+  cursor: pointer;
+}
+#admin main legend, #service main legend{
+  color: #1F058C;
+  font-size: 103%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #1F058C;
+  color: #fff;
+  padding: 3px;
+}
+/*#contact main label {
+  float: left;
+  width: 8em;
+  color: #606060;
+  display: block;
+  text-align: right;
+  padding-right: 10px;
+}*/
+
+#admin main p.center, #service main p.center{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+#admin #checks, #service #checks {
+  margin-left: 30px;
+  padding: 0 25px;
+  color: #000;
+  text-shadow: .5px .5px #fff;
+}
+
+#admin main input[type=submit], input[type=reset], #service main input[type=submit], input[type=reset] {
+  width: 100px;
+  color: #fff;
+  background: #1F058C;
+  padding: 2px 6px;
+  margin: 6px 0;
+}
+
+
+
+
+
+
+
